@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
    
-    fetch(`${domainBackend}/api/login`,
+   await fetch(`${domainBackend}/api/login`,
         {
             headers: {
               'Accept': 'application/json',
