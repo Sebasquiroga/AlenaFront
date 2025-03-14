@@ -20,6 +20,7 @@ fetch(`${domainBackend}/api/login`,
     }
 ).then(response => {
     if (response.status === 201) {  alert('listo el login')
+        window.location.replace("dashboard.html")
         
     } 
     else if (response.status === 401) {

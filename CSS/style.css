@@ -143,3 +143,4 @@ button {
     margin-top: 60px; /* Ajuste para evitar que quede detrás del navbar */
     min-height: calc(100vh - 180px); /* Ocupa casi toda la pantalla, restando la altura del navbar */
 }
+
