@@ -1,11 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Para evitar que el contenido quede oculto detrás del navbar */
 }
 
 .login-container {
@@ -39,15 +40,11 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 .error-message {
@@ -56,12 +53,6 @@ button:hover {
     margin-top: 10px;
 }
 
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    padding: 10px 20px;
-}
 .navbar a {
     color: white;
     text-decoration: none;
@@ -69,5 +60,86 @@ button:hover {
     transition: background 0.3s;
 }
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #b1b1b1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    width: 85%; /* Ocupa 3/4 partes del ancho de la pantalla */
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    list-style: none;
+    gap: 15px;
+    margin-right: calc(100% / 6); /* Deja 1/6 del ancho libre en la derecha */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar, .logout-container {
+    position: fixed;
+    top: 0;
+    background: #333;
+    color: white;
+    height: 80px; /* Asegura que ambas clases tengan la misma altura */
+    display: flex;
+    align-items: center;
+}
+
+.logout-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%; /* Ocupa 1/5 del ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+
+}
+
+.logout-button {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+
+}
+
+.logout-button:hover {
+    background: darkred;
+    height: 50px;
+}
+
+.content {
+    width: 95%; /* Ocupa el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenido */
+    padding:15px;
+    margin-top: 60px; /* Ajuste para evitar que quede detrás del navbar */
+    min-height: calc(100vh - 180px); /* Ocupa casi toda la pantalla, restando la altura del navbar */
 }

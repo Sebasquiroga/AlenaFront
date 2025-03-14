@@ -8,18 +8,21 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="#productos">Productos</a>
-        <a href="#tiendas">Tiendas</a>
-        <a href="#proveedores">Proveedores</a>
-        <a href="#usuarios">Usuarios</a>
+        <ul class="menu">
+            <li><a href="#" onclick="showContent('Productos')">Productos</a></li>
+            <li><a href="#" onclick="showContent('Proveedores')">Proveedores</a></li>
+            <li><a href="#" onclick="showContent('Tienda')">Tienda</a></li>
+            <li><a href="#" onclick="showContent('Lista')">Lista</a></li>
+        </ul>
     </nav>
-    
-    <div>
-        <h1>Bienvenido al Dashboard</h1>
-        <p>Selecciona una opción del menú para comenzar.</p>
-        <button class="action-button" onclick="logout()">Cerrar sesion</button>
-        <button class="action-button" onclick="test()">Test</button>
-    </div>
+    <div class="logout-container">
+        <button class="logout-button">Logout</button>
+    </div>   
+    <section class="content" id="content-area">
+        <h1>Bienvenido</h1>
+        <p>Selecciona una opción del menú para ver más contenido.</p>
+    </section>
+   
     <script src="../JS/validations.js"></script>
 </body>
 </html>
