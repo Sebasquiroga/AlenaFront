@@ -8,11 +8,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul class="menu">
-            <li><a href="#" onclick="showContent('Productos')">Productos</a></li>
-            <li><a href="#" onclick="showContent('Proveedores')">Proveedores</a></li>
-            <li><a href="#" onclick="showContent('Tienda')">Tienda</a></li>
-            <li><a href="#" onclick="showContent('Lista')">Lista</a></li>
+        <ul class="menu" id="menu">
+            <button data-module="usuarios">Usuarios</button>
+            <button data-module="productos">Productos</button>
+            <button data-module="tienda">Tienda</button>
+            <button data-module="lista">lista</button>
         </ul>
     </nav>
    <div class="logout-container">
@@ -23,6 +23,6 @@
         <p>Selecciona una opción del menú para ver más contenido.</p>
     </section>
    
-    <script src="../JS/controllers.js"></script>
+    <script type= module src="../JS/main.js"></script>
 </body>
 </html>

@@ -144,3 +144,9 @@ button {
     min-height: calc(100vh - 180px); /* Ocupa casi toda la pantalla, restando la altura del navbar */
 }
 
+
+
+#formularioCreateUser {
+      display: none;
+      margin-top: 10px;
+    }
