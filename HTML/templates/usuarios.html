@@ -1,18 +1,34 @@
 <h2>Gestión de Usuarios</h2>
 <ul>
   <li><button id="add-user-btn">Agregar Usuario</button></li>
-    <form id="formularioCreateUser">
+    <form class="form" id="formularioCreateUser">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nameUser" name="nameUser"><br><br>
-
       <label for="password">password:</label>
       <input type="password" id="passwordUser" ><br><br>
-
       <input type="submit" value="Enviar">
     </form>
   <li><button id="edit-user-btn">Editar Usuario</button></li>
   <li><button id="delete-user-btn">Eliminar Usuario</button></li>
+      <form class="form" id="DeleteUser">
+      <input type="search" id="usuarioDelete" placeholder="Eliminar usuario">
+      <input type="submit" value="Eliminar usuario">
+      </form>
   <li><button id="search-user-btn">Buscar Usuario</button></li>
-  <li><button>Lista de Usuarios</button></li>
+    <form  class="form" id="searchUser">
+      <input type="search" id="usuarioSearch" placeholder="Buscar usuario">
+      <input type="submit" value="Buscar usuario">
+    </form>
+  <table id="miTabla" class="table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tienda</th>
+      </tr>
+    </thead>
+  <tbody id="miTablaBody">
+    <!-- Aquí se insertarán las filas -->
+  </tbody>
+  </table>  
 </ul>
 

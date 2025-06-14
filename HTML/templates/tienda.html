@@ -1,6 +1,32 @@
 <h2>Gestión de tienda</h2>
 <ul>
   <li><button id="add-shop-btn">Agregar tienda</button></li>
+    <form class="form" id="FormAddShop" >
+      <ul> 
+        <li>
+          <label for="shopName">Nombre de la tienda:</label>
+          <input type="text" id="shopName" name="shopName" required>
+        </li>
+        <li>
+          <label for="TelShop">Telefono de la tienda:</label>
+          <input type="number" id="telShop" name="telShop" required>
+        </li>
+        <li>
+          <label for="AddressShop">direccion de la tienda:</label>
+          <input type="Text" id="addressShop" name="addressShop" required>
+        </li>
+        <input type="submit" value="Enviar">
+      </ul>
+    </form>
   <li><button id="search-shop-btn">Buscar tienda</button></li>
-  <li><button>ver tienda</button></li>
+  <form class="form" id="FormSearchShop">
+    <ul>
+      <li>
+        <label for="searchShop">Buscar tienda:</label>
+        <input type="search" id="searchShop" name="searchShop" required>
+      </li>
+      <input type="submit" value="Buscar">
+    </ul>
+  </form>
+  <li><button id="AllShops">Todas las tiendas</button></li>
 </ul>

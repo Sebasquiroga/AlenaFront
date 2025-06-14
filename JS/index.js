@@ -28,6 +28,4 @@ fetch(`${domainBackend}/api/login`,
     else {
         errorMessage.innerText = "Invalid username or password";}
 }).catch(error => {
-    errorMessage.innerText = "Invalid username or password";
-})
-})
+    errorMessage.innerText = "Invalid username or password";}) })
