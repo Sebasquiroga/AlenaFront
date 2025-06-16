@@ -1,8 +1,48 @@
 <h2>Gestión de productos</h2>
 <ul>
   <li><button id="add-products-btn">Agregar productos</button></li>
+    <form action="post" id="createProduct" class="form">
+    <label for="product-name">Nombre del producto:</label>
+    <input type="text" id="product-name" name="product-name" required>
+    <label for="product-buy">Formato de compra:</label>
+      <select id="opcionesCompra" name="opciones">
+        <option value="Bulto">Bulto</option>
+        <option value="Canastilla">Canastilla</option>
+        <option value="Unidad">Unidad</option>
+      </select>  
+    <label for="product-description">Formato de venta</label>
+    <select id="opcionesVenta" name="opciones">
+        <option value="Libra">libra</option>
+        <option value="unidad">unidad</option>
+        <option value="Bulto">Bulto</option>
+      </select>
+  </form>
   <li><button id="edit-products-btn">Editar productos</button></li>
+    <form id="editProduct" class="form">
+    <label for="productName">Nombre completo del producto</label>
+    <input type="text" id="productName" name="productName" required>
+    <label for="product-buy">Formato de compra:</label>
+      <select id="newopcionesCompra" name="opciones">
+        <option value="Bulto">Bulto</option>
+        <option value="Canastilla">Canastilla</option>
+        <option value="Unidad">Unidad</option>
+      </select>  
+    <label for="product-description">Formato de venta</label>
+    <select id="newopcionesVenta" name="opciones">
+        <option value="Libra">libra</option>
+        <option value="unidad">unidad</option>
+        <option value="Bulto">Bulto</option>
+      </select>
+  </form>
   <li><button id="delete-products-btn">Eliminar productos</button></li>
+    <form action="delete" class="form" id="deleteProduct">
+    <label for="delete-product">Escriba el nombre completo del producto a eliminar</label>
+    <input type="text" id="delete-product" required>
+    </form>
   <li><button id="search-products-btn">Buscar productos</button></li>
-  <li><button>Lista de Usuarios</button></li>
+   <form  id="searchProduct" class="form">
+    <label for="search-product">Buscar producto:</label>
+    <input type="text" id="search-product" name="search-product" required>
+    <button type="submit">Buscar</button>
+   </form>
 </ul>
