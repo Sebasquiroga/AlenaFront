@@ -1,8 +1,22 @@
 <h2>Gestión de proveedores</h2>
 <ul>
-  <li><button id="add-provider-btn">Agregar proveedores</button></li>
+  <li><button id="create-provider-btn">Agregar proveedores</button></li>
+    <form action="post" id="createProvider" class="form">
+    <label for="provider-name">Nombre del proveedor:</label>
+    <input type="text" id="provider-name" name="provider-name" required>
+    <label for="provider-phone">Teléfono del proveedor:</label>
+    <input type="tel" id="provider-phone" name="provider-phone" required>
+    <label for="provider-dit">NIT o RUT:</label>
+    <input type="number" id="provider-dit" name="provider-dit" required>
+    <label for="provider-address">Dirección del proveedor:</label>
+    <input type="text" id="provider-address" name="provider-address" required>
+    </form>
   <li><button id="edit-provider-btn">Editar proveedores</button></li>
   <li><button id="delete-provider-btn">Eliminar proveedores</button></li>
   <li><button id="search-provider-btn">Buscar proveedores</button></li>
-  <li><button>Lista de proveedores</button></li>
+    <form class="form" id="findProvider">
+    <li>
+      <label for="provider">Nombre del proveedor:</label>
+      <input type="text" id="providerName" name="providerName" required>    
+    </form>
 </ul>
